@@ -29,3 +29,11 @@ def experience(request):
 def contact(request):
 
     return render(request, 'contact.html')
+
+def games(request):
+
+    return render(request, 'games.html')
+
+def more_games(request):
+
+    return render(request, 'more_games.html')

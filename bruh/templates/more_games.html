@@ -1,0 +1,14 @@
+{% load static %}
+{% block content %}
+<h3>This is one is kinda boring</h3>
+
+<div class="container-fluid">
+<pyxel-play
+	root="https://assets.codepen.io/430361"
+	name="bit_maze"
+	gamepad="enabled"
+></pyxel-play>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/gh/kitao/pyxel/wasm/pyxel.js'></script><script  src="{% static 'bit-maze-retro-game-with-pyxel/dist/script.js' %}"></script>
+</div>
+{% endblock %}

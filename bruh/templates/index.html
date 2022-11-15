@@ -1,30 +1,31 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
 <head>
-    {% load static %}
 	<meta charset="UTF-8">
 	<title>Steven D. Press</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}?{% now "U" %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}?{% now "U" %}">
 	<link rel="stylesheet" href="{% static 'css/featherlight.min.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Oxygen:300,400,700" rel="stylesheet">
 	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png'%}">
-    <link rel="manifest" href="{% static 'images/site.webmanifest'%}">
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
 	<script src="{% static 'js/featherlight.min.js'%}" type="text/javascript" charset="utf-8"></script>
-    <script src="{% static 'custom.js'%}"></script>
+    <script src="{% static 'custom.js'%}?{% now "U" %}"></script>
      <link rel='stylesheet' href='https://codepen.io/soju22/pen/PoZLGJj/4aeaa568d7a4f3459bcde0e70b10f35a.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap'><link rel="stylesheet" href="{% static 'liquid-grid/dist/style.css'%}">
-    <link rel="stylesheet" href="{% static '3d-particles-1998/dist/style.css'%}">
+    <link rel="stylesheet" href="{% static '3d-particles-1998/dist/style.css' %}">
+    <link rel="stylesheet" href="{% static 'monster-mashspooky-house-game/dist/' %}">
+    <!--<link rel="stylesheet" href="{% static 'self-destruct-button/dist/style.css' %}">-->
+    <link rel="stylesheet" href="{% static 'runaway-button/dist/style.css' %}">
 
 
 </head>
@@ -32,21 +33,14 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid bruh">
-      <img src="{% static 'images/header_image.jpg'%}" alt="" width="80" height="80">
-      &emsp;
-        <img src="{% static 'images/name.png'%}" alt="" width="auto" height="auto">
-      <div class="tooltip" title="This is my span's tooltip message!"></div>
-
-
+      <img src="{% static 'images/image.jpg' %}" alt="" width="80" height="80">
+      &emsp; <img src="{% static 'images/name.png'%}" alt="" width="auto" height="auto" title="Steve is also fine">
   </div>
-        <div class="container-fluid">
-        <a tabindex="0"  data-toggle="popover" data-trigger="focus" title="Steve is also fine"></a>
+        <div class="container-fluid ">
         </div>
      <div class="container-fluid">
-        <a tabindex="0"  data-toggle="popover" data-trigger="focus" title="Steve is also fine"></a>
         </div>
  <div class="container-fluid">
-        <a tabindex="0"  data-toggle="popover" data-trigger="focus" title="Steve is also fine"></a>
         </div>
 
 
@@ -105,6 +99,9 @@
 
 </nav>
 
+<button id='runaway-btn'>Fuck You Nigga &#129315;</button>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script><script  src="{% static 'runaway-button/dist/script.js'%} "></script>
 
     {% block content %}
         {% endblock %}
@@ -112,7 +109,7 @@
 	<footer>
 		<div class="wrapper">
 			<div class="footer-left">
-				<p class="footy">Created Using Django, Bootstrap, Postgres, and Open Source Code by Steven D. Press</p>
+				<p>Created Using Django, Bootstrap, and Open Source Code by Steven D. Press</p>
 			</div>
 			<div class="footer-right">
 				<p class="footer-links"><a href="https://github.com/popzyyy" target="_blank" rel="noopener noreferrer">Github</a> ◢◤ <a href="https://github.com/popzyyy" target="_blank" rel="noopener noreferrer">Social Media</a></p>
@@ -120,10 +117,8 @@
 			<div class="clear"></div>
 		</div>
 	</footer>
-<div id="container"><canvas id="canvas"></canvas></div>
-<!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="{% static '3d-particles-1998/dist/script.js' %}"></script>
-
+{% block y %}
+{% endblock %}
 </body>
 </html>
 
