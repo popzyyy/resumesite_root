@@ -1,13 +1,39 @@
 {% extends 'index.html' %}
-{% block content %}
-<body>
 {% load static %}
- <canvas id="canvas"></canvas>
+{% block content %}
 
+<div class="form-box">
+  <h1>Contact Me!</h1>
+  <p>Using <a href="https://getbootstrap.com">Bootstrap</a> and <a href="https://www.formbucket.com">FormBucket</a></p>
+  <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" id="name" type="email" name="Name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input class="form-control" id="email" type="email" name="Email">
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" name="Message"></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+
+
+
+{% block y %}
+    <body>
+     <canvas id="canvas"></canvas>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js'></script>
 <script src='https://klevron.github.io/codepen/three.js/OrbitControls.110.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js'></script>
-<script  src="{% static 'liquid-grid/dist/script.js'%}"></script>
+<script  src="{% static 'js/liquid_script.js' %}"></script>
 </body>
 {% endblock %}

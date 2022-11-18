@@ -18,7 +18,7 @@ a_neon{
     display: inline-block;
     padding: 5px 10px;
     margin: 5px 0;
-    color: rgba(244, 3, 23, 0.93);
+    color: rgb(255, 189, 0);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
@@ -28,13 +28,13 @@ a_neon{
 
 }
 a_neon:hover{
-    background: #0363f4;
-    color: #0363f4;
-    box-shadow: 0 0 5px #0363f4,
-                0 0 8px #0363f4,
-                0 0 12px #0363f4,
-                0 0 16px #0363f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    background: #dd62fc;
+    color: #dd62fc;
+    box-shadow: 0 0 5px #dd62fc,
+                0 0 8px #dd62fc,
+                0 0 12px #dd62fc,
+                0 0 16px #dd62fc;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #dd62fc);
 }
 a_neon:nth-child(1){
     filter: hue-rotate(270deg);
@@ -51,8 +51,9 @@ a_neon span:nth-child(1){
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg,transparent, rgba(0, 0, 0, 0.27));
-    animation: animate1 6s linear infinite;
+    background: linear-gradient(90deg,transparent, #dd62fc);
+    animation: animate1 9s linear infinite;
+
 }
 @keyframes animate1{
     0%{
@@ -67,8 +68,8 @@ a_neon span:nth-child(2){
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(180deg,transparent, rgba(0, 0, 0, 0.27));
-    animation: animate2 6s linear infinite;
+    background: linear-gradient(180deg,transparent, #dd62fc);
+    animation: animate2 9s linear infinite;
     animation-delay: 0.00s;
 }
 @keyframes animate2{
@@ -84,8 +85,8 @@ a_neon span:nth-child(3){
     right: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(270deg,transparent,rgba(0, 0, 0, 0.27));
-    animation: animate3 6s linear infinite;
+    background: linear-gradient(270deg,transparent, #dd62fc);
+    animation: animate3 9s linear infinite;
     animation-delay: 0.50s;
 }
 @keyframes animate3{
@@ -103,8 +104,8 @@ a_neon span:nth-child(4){
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(360deg,transparent, rgba(0, 0, 0, 0.27));
-    animation: animate4 6s linear infinite;
+    background: linear-gradient(360deg,transparent, #dd62fc);
+    animation: animate4 9s linear infinite;
     animation-delay: 0.75s;
 }
 @keyframes animate4{
@@ -136,3 +137,29 @@ html, body {
   margin: 0;
 }
 
+.cust_input {
+    margin-top: 20px;
+}
+
+body {
+  background: #f7f7f7;
+}
+/*contact form*/
+
+.form-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.93);
+    border: 5px solid rgba(255, 255, 255, 0.93);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+}

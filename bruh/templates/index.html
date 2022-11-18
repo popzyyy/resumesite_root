@@ -21,11 +21,14 @@
 	<script src="{% static 'js/featherlight.min.js'%}" type="text/javascript" charset="utf-8"></script>
     <script src="{% static 'custom.js'%}?{% now "U" %}"></script>
      <link rel='stylesheet' href='https://codepen.io/soju22/pen/PoZLGJj/4aeaa568d7a4f3459bcde0e70b10f35a.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap'><link rel="stylesheet" href="{% static 'liquid-grid/dist/style.css'%}">
-    <link rel="stylesheet" href="{% static '3d-particles-1998/dist/style.css' %}">
-    <link rel="stylesheet" href="{% static 'monster-mashspooky-house-game/dist/' %}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap'><link rel="stylesheet" href="{% static 'liquid-grid/dist/liquid_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/3d_style.css' %}">
     <!--<link rel="stylesheet" href="{% static 'self-destruct-button/dist/style.css' %}">-->
-    <link rel="stylesheet" href="{% static 'runaway-button/dist/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/runaway_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/liquid_style.css' %}">
+    <button  id='runaway-btn'>pussy &#129315; </button>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+    <script src="{% static 'js/runaway_script.js' %} "></script>
 
 
 </head>
@@ -35,6 +38,7 @@
   <div class="container-fluid bruh">
       <img src="{% static 'images/image.jpg' %}" alt="" width="80" height="80">
       &emsp; <img src="{% static 'images/name.png'%}" alt="" width="auto" height="auto" title="Steve is also fine">
+
   </div>
         <div class="container-fluid ">
         </div>
@@ -98,15 +102,10 @@
     </div>
 
 </nav>
-<button id='runaway-btn'>Fuck You lmao &#129315;</button>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script><script  src="{% static 'runaway-button/dist/script.js'%} "></script>
-
 
     {% block content %}
         {% endblock %}
-
-	<footer>
+    <footer>
 		<div class="wrapper">
 			<div class="footer-left">
 				<p>Created Using Django, Bootstrap, and Open Source Code by Steven D. Press</p>
@@ -119,7 +118,10 @@
 	</footer>
 {% block y %}
 {% endblock %}
+
+
+
 </body>
 </html>
 
-
+<script></script>
