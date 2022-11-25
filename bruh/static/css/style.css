@@ -39,6 +39,7 @@ h6 { font-size: 18px;}
 h3, h4 {
 	position: relative;
 	padding-bottom: 28px;
+
 }
 
 h3:after, h4:after{
@@ -94,6 +95,7 @@ a:hover {
 
 .clear {
 	clear: both;
+	background-color: #222;
 }
 
 .wrapper {
@@ -318,8 +320,17 @@ header#top nav ul li a.nav-cta {
 	background: #fff;
 }
 
+.featured-articles-section-dark {
+	text-align: center;
+	padding: 60px 0;
+	background: #222;
+}
+
 .cards-container {
 	margin: 60px auto;
+}
+.cards-container-slim {
+	margin: 30px auto;
 }
 
 .article-card {
@@ -389,6 +400,11 @@ header#top nav ul li a.nav-cta {
 .article-card.card-medium {
 	width: 520px;
 	height: 420px;
+}
+.article-card.card-extra-medium {
+	width: 1600px;
+	height: 200px;
+	position: absolute;
 }
 
 .article-card.card-small {
