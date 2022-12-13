@@ -4,27 +4,28 @@
 
 			<section class="featured-articles-section-dark">
 		<div class="wrapper">
-			<h3>Featured Articles</h3>
+			<h7>So Why Did I Make This Website?</h7>
 				<div class="cards-container-slim">
-					<div class="article-card article-card-alt card-large" style="background-image: url('images/card-bg-1.jpg');">
+					<div class="article-card article-card-alt card-large">
+
+                         <!--style="background-size: 100% 120%;background-image: url(../static/images/IMG_7009.JPG);">-->
 						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus feugiat mi, a tincidunt lectus. </p>
+
+							<h6>My father purchased the domain stevenpress.com when I was born in 1996. Until I went through the MS in MIS program at University of Nebraska at Omaha, I did not know anything about programming. Now that I can program, I figured why not put the domain and my skills to use. I use this website as a resume and an informational. I have lived in and out of the Omaha, Nebraska area since 2007. I have lived in Nebraska, Kansas, Florida, Hawaii, Virginia, and Illinois. </h6>
 						</div>
 					</div>
-					<div class="article-card article-card-alt card-small" style="background-image: url('images/card-bg-2.jpg');;">
+					<div class="article-card article-card-alt card-small" onclick='location.href="{% url 'interests' %}";'>
 						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p><a href="#">Read more</a></p>
+
+							<h4>Personal Interests</h4>
+							<p>Informal</p>
 						</div>
 					</div>
-					<div class="article-card article-card-alt card-small" style="background-image: url('images/card-bg-3.jpg');">
+					<div class="article-card article-card-alt card-small" onclick='location.href="{% url 'portfolio' %}";'>
 						<div class="article-card-content">
-							<span class="category">Category</span>
-							<h4>Article Title</h4>
-							<p><a href="#">Read more</a></p>
+
+							<h4>Tools and Personal Projects</h4>
+							<p>Portfolio</p>
 						</div>
 					</div>
 

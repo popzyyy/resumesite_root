@@ -1,0 +1,91 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="masonry-section"><a name="portfolio"></a>
+        <h3>Tools and Personal Projects</h3>
+        <div class="wrapper">
+            <div class="masonry">
+                <div class="item">
+                    <div class="summary">
+                        <h4>Simple Retirement Calculator</h4>
+                        <div class="container-fluid">
+                            <a href="{% static 'files/Simple_Retirement_Calculator.xlsx' %}"
+                               download="simple_retirement_calculator.xlsx" style=" color: #0A246A">
+                                <img src="{% static 'images/excel.png' %}" alt=""
+                                     class="article-image-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="" class="article-image">
+                    <div class="summary">
+                        <h4>Article Title</h4>
+                        <a href="https://github.com/popzyyy/8380s22tm3app" target="_blank" style=" color: #0A246A">
+                            <img src="{% static 'images/GitHub-logo.png' %}" alt=""
+                                 class="article-image-icon"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="" class="article-image">
+                    <div class="summary">
+                        <h4>Article Title</h4>
+                        <a href="https://github.com/uno-isqa-8950/markedbycovid" target="_blank" style=" color: #0A246A">
+                            <img src="{% static 'images/GitHub-logo.png' %}" alt=""
+                                 class="article-image-icon"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="" class="article-image">
+                    <div class="summary">
+                        <h4>Article Title</h4>
+                        <a href="https://github.com/popzyyy/21f8210tm3app" target="_blank" style=" color: #0A246A">
+                            <img src="{% static 'images/GitHub-logo.png' %}" alt=""
+                                 class="article-image-icon"></a>
+                    </div>
+                </div>
+                 <div class="item">
+                    <img src="" alt="" class="article-image">
+                    <div class="summary">
+                        <h4>Article Title</h4>
+                        <a href="https://github.com/popzyyy/21f8210tm3app" target="_blank" style=" color: #0A246A">
+                            <img src="{% static 'images/GitHub-logo.png' %}" alt=""
+                                 class="article-image-icon"></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="" class="article-image-icon">
+                    <div class="summary">
+                        <h4>Article Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras
+                            molestie tristique tempor.</p>
+                        <span class="category">Category - Aug 1, 2016</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="" class="article-image-icon">
+                    <div class="summary">
+                        <a href="{% url 'windows' %}">
+                            <img src="{% static 'images/question.png' %}" alt=""
+                                 class="article-image-icon"></a>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="" class="article-image-icon">
+                    <div class="summary">
+                        <h4>Article Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum rhoncus hendrerit. Cras
+                            molestie tristique tempor.</p>
+                        <span class="category">Category - Aug 1, 2016</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+
+{% endblock %}

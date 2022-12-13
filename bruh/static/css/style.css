@@ -4,6 +4,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
 
 html, html a {
@@ -29,20 +30,36 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 }
+h7 {
+	font-family: 'Garamond',  Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+h8 {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.93);
+	margin: 0;
+	padding: 0;
+}
 
 h2 { font-size: 60px;}
 h3 { font-size: 41px;}
 h4 { font-size: 32px;}
 h5 { font-size: 21px;}
 h6 { font-size: 18px;}
+h7 { font-size: 32px;}
+h8 { font-size: 21px;}
 
-h3, h4 {
+h3, h4, h7, h8 {
 	position: relative;
 	padding-bottom: 28px;
 
 }
 
-h3:after, h4:after{
+h3:after, h4:after, h7:after{
     content: "";
     position: absolute;
     width: 80px;
@@ -54,6 +71,17 @@ h3:after, h4:after{
     border-bottom: 2px solid #b1a492;
 }
 
+h8:after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
 p {
 	line-height: 1.4;
 	margin: 20px 0;
@@ -91,6 +119,7 @@ a:hover {
 ::selection {
 	background: #e59361;
 	color: #fff;
+
 }
 
 .clear {
@@ -252,15 +281,15 @@ header#top nav ul li a.nav-cta {
 /*Banner*/
 
 #banner {
-	height: 800px;
-	background: #222 url(../images/IMG_6599.JPG) no-repeat center;
+	height: 550px;
+	background: #222 no-repeat center ;
 	position: relative;
 	padding: 1px 0 0 0;
 }
 
 #banner .wrapper {
 	text-align: center;
-	margin-top: 230px;
+	margin-top: 160px;
 }
 
 #banner h2 {
@@ -364,8 +393,15 @@ header#top nav ul li a.nav-cta {
 .article-card-content {
 	width: 90%;
 	margin: 22% auto;
-}
 
+}
+.article-card-content-low {
+	width: 90%;
+	margin: 22% auto;
+	padding-top: 35%;
+	color: #2B6FB6;
+
+}
 .article-card .category {
 	color: #e0dad4;
 }
@@ -380,7 +416,7 @@ header#top nav ul li a.nav-cta {
 	font-size: 16px;
 	color: #e0dad4;
 	width: 90%;
-	margin: 25px auto 0 auto;
+	margin: 5px auto 0 auto;
 }
 
 .article-card.card-large p {
@@ -704,7 +740,11 @@ ul.services-list li:last-of-type {
 	border-top-right-radius: 10px;
 	width: 100%;
 }
-
+.item img.article-image-icon {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+}
 .advert-item {
 	background: none;
 }
@@ -816,7 +856,7 @@ footer p {
 footer .footer-links {
 	color: rgba(119, 119, 119, 0.89);
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 footer .footer-links a {

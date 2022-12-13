@@ -1,24 +1,36 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
+    <div class="form-box" style="border-radius: 4px;">
+    <h1>Contact Me</h1>
+    <form method="POST">
+        {% csrf_token %}
 
-<div class="form-box">
-  <h1>Contact Me!</h1>
-  <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input class="form-control" id="name" type="email" name="Name">
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input class="form-control" id="email" type="email" name="Email">
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea class="form-control" id="message" name="Message"></textarea>
-    </div>
-    <input class="btn btn-primary" type="submit" value="Submit" />
-    </div>
+        <div class="form-group">
+            {{ form.name.errors }}
+            <label style="font-family:'Verdana', sans-serif" for="{{ form.name.id_for_label }}">Name</label>
+            {{ form.name }}
+
+        </div>
+        <div class="form-group">
+            {{ form.email.errors }}
+            <label style="font-family:'Verdana', sans-serif;" for="{{ form.email.id_for_label }}">Email</label>
+            {{ form.email }}
+        </div>
+        <div class="form-group">
+            {{ form.message.errors }}
+            <label style="font-family:'Verdana', sans-serif" for="{{ form.message.errors }}">Message</label>
+            {{ form.message }}
+        </div>
+        <div class="form-group">
+            <br>
+        <input class="custom-btn-fard btn-1" type="submit" value="Submit" />
+
+        </div>
+    </form>
+</div>
+
+
 
 
 {% endblock %}
@@ -39,3 +51,4 @@
 
 
 {% endblock %}
+

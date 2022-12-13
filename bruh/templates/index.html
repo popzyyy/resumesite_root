@@ -19,9 +19,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
 	<script src="{% static 'js/featherlight.min.js'%}" type="text/javascript" charset="utf-8"></script>
-    <script src="{% static 'custom.js'%}?{% now "U" %}"></script>
      <link rel='stylesheet' href='https://codepen.io/soju22/pen/PoZLGJj/4aeaa568d7a4f3459bcde0e70b10f35a.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap'><link rel="stylesheet" href="{% static 'liquid-grid/dist/liquid_style.css' %}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap'>
+    <link rel="stylesheet" href="{% static 'css/liquid_style.css' %}">
     <link rel="stylesheet" href="{% static 'css/3d_style.css' %}">
     <!--<link rel="stylesheet" href="{% static 'self-destruct-button/dist/style.css' %}">-->
     <link rel="stylesheet" href="{% static 'css/runaway_style.css' %}">
@@ -57,7 +57,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                <a class="nav-link" href="{% url 'home' %}">Home</a>
+                <a class="nav-link" href="{% url 'home' %}"><b>Home</b></a>
             </a_neon>
         </li>
         <li class="nav-item">
@@ -66,7 +66,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link" href="{% url 'about' %}"><b>About</b></a>
             </a_neon>
         </li>
            <li class="nav-item">
@@ -75,7 +75,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <a class="nav-link" href="{% url 'resume' %}">Resume</a>
+                   <a class="nav-link" href="{% url 'resume' %}"><b>Resume</b></a>
                </a_neon>
         </li>
            <li class="nav-item">
@@ -84,7 +84,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                   <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+                   <a class="nav-link" href="{% url 'experience' %}"><b>Experience</b></a>
                </a_neon>
         </li>
            <li class="nav-item">
@@ -93,7 +93,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-          <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                   <a class="nav-link" href="{% url 'contact' %}"><b>Contact</b></a>
                </a_neon>
         </li>
       </ul>

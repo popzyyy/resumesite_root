@@ -10,7 +10,7 @@ from bruh.managers import CustomUserManager
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.BigAutoField(primary_key=True, editable=False)
     email = models.EmailField(_('email address'), validators=[validate_email], unique=True)
     first_name = models.CharField(max_length=75)
     is_staff = models.BooleanField(default=True)
@@ -28,3 +28,23 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name_plural = "Admins"
         verbose_name = "Admin"
+
+
+class Visitor(models.Model):
+    id = models.BigAutoField(primary_key=True, editable=False)
+    ipaddress = models.TextField(max_length=150, blank=True)
+    city = models.TextField(max_length=150, blank=True)
+    state = models.TextField(max_length=150, blank=True)
+    country = models.TextField(max_length=150, blank=True)
+    latitude = models.DecimalField(max_digits=15, decimal_places=12, blank=True)
+    longitude = models.DecimalField(max_digits=15, decimal_places=12, blank=True)
+    zipcode = models.IntegerField(blank=True)
+    when_visited = models.DateTimeField(auto_now=True)
+
+
+class Contact(models.Model):
+    id = models.BigAutoField(primary_key=True, editable=False)
+    name = models.CharField(max_length=150)
+    email = models.EmailField(max_length=200)
+    message = models.TextField(max_length=3000)
+    when_sent = models.DateTimeField(auto_now=True)
