@@ -121,11 +121,8 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'bruh/static'),
-]
 
 GRAPPELLI_ADMIN_TITLE = 'Admin Panel'
 GRAPPELLI_ADMIN_HEADLINE = 'Admin Panel'
