@@ -13,6 +13,30 @@ body_neon{
     font-family: 'Copperplate Gothic', sans-serif;
     font-weight: bold;
 }
+btn_neon{
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: rgb(255, 189, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 15px;
+
+}
+btn_neon:hover{
+    background: #08FF72FF;
+    color: #08FF72FF;
+    box-shadow: 0 0 5px #08FF72FF,
+                0 0 8px #08FF72FF,
+                0 0 12px #08FF72FF,
+                0 0 16px #08FF72FF;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #08FF72FF);
+}
+
 a_neon{
     position: relative;
     display: inline-block;
@@ -27,6 +51,7 @@ a_neon{
     margin-right: 15px;
 
 }
+
 a_neon:hover{
     background: #08FF72FF;
     color: #08FF72FF;
