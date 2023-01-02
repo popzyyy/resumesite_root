@@ -1,5 +1,4 @@
 from __future__ import unicode_literals
-import uuid
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
@@ -39,7 +38,7 @@ class Visitor(models.Model):
     latitude = models.DecimalField(max_digits=15, decimal_places=12, blank=True)
     longitude = models.DecimalField(max_digits=15, decimal_places=12, blank=True)
     zipcode = models.IntegerField(blank=True)
-    when_visited = models.DateTimeField(auto_now=True)
+    when_visited = models.DateTimeField(default=timezone.now)
 
 
 class Contact(models.Model):
@@ -47,4 +46,4 @@ class Contact(models.Model):
     name = models.CharField(max_length=150)
     email = models.EmailField(max_length=200)
     message = models.TextField(max_length=3000)
-    when_sent = models.DateTimeField(auto_now=True)
+    when_sent = models.DateTimeField(default=timezone.now)

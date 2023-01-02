@@ -1,29 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-    <style>
-        #smiley-circle {
-            width: 60%;
-            height: 30%;
-            border-radius: 50%;
-            justify-content: center;
-            text-align: center;
-            margin: auto;
-            display: flex;
-            background-image: url("../static/images/question.png");
-            background-size: cover;
-            animation: spin 2s linear infinite;
-        }
-
-        @keyframes spin {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-    </style>
-
-
     <section class="masonry-section"><a name="portfolio"></a>
         <h3>Completed Projects</h3>
         <div class="wrapper">
@@ -88,26 +65,13 @@
                                  class="article-image-icon"></a>
                     </div>
                 </div>
-                <div class="item">
-                    <img src="" alt="" class="article-image-icon">
-                    <div class="summary">
-                        <a href="{% url 'windows' %}">
-                            <img id="smiley-circle" width=50% height=50% src="{% static 'images/question.png' %}" alt=""
-                                 class="article-image-icon"></a>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="clear"></div>
     </section>
 
-    <script>
-        const circle = document.getElementById('smiley-circle');
 
-        setInterval(function () {
-            circle.style.animation = `spin ${60 / 20}s linear infinite`;
-        }, 1000);
-
-
-    </script>
 {% endblock %}
+
+

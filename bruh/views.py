@@ -2,11 +2,12 @@ from django.http import request, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
+from django.template import RequestContext
 from bruh.forms import ContactForm
 from bruh.models import *
 from django.contrib.gis.geoip2 import GeoIP2
-import turtle
 from resumesite import settings
+
 
 
 def ip_get_bruh(request):
@@ -31,6 +32,7 @@ def ip_get_bruh(request):
             bruh.save()
     except:
         pass
+
 
 
 def refresh(request):
